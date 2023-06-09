@@ -34,7 +34,7 @@ register 'elastic' 'status' 'HTTP status code of the elasticsearch service' elas
 
 function elastic_wait(){
   echo 'waiting for elasticsearch service to come up';
-  retry_count=30
+  retry_count=60
 
   i=1
   while [[ "$i" -le "$retry_count" ]]; do
