@@ -5,9 +5,7 @@
   },
   "esclient": {
     "apiVersion": "7.5",
-    "hosts": [
-      { "host": "elasticsearch" }
-    ]
+    "nodes": ["http://elasticsearch:9200"]
   },
   "elasticsearch": {
     "settings": {

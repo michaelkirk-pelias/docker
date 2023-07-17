@@ -109,6 +109,9 @@ services:
     ports: [ "127.0.0.1:9200:9200", "127.0.0.1:9300:9300" ]
     volumes:
       - "${DATA_DIR}/elasticsearch:/usr/share/elasticsearch/data"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
     ulimits:
       memlock:
         soft: -1
