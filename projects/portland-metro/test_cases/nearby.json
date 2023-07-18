@@ -1,0 +1,25 @@
+{
+  "name": "testing `nearby` endpoint",
+  "tests": [
+    {
+      "id": "1",
+      "status": "pass",
+      "endpoint": "nearby",
+      "in": {
+        "point.lon": -122.6795,
+        "point.lat": 45.5191,
+        "categories": "finance"
+      },
+      "expected": {
+        "properties": [
+          {
+            "name": "Wells Fargo",
+            "neighbourhood": "Downtown",
+            "locality": "Portland",
+            "distance": 0.061
+          }
+        ]
+      }
+    }
+  ]
+}

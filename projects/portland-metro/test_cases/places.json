@@ -1,0 +1,27 @@
+{
+  "name": "Result properties",
+  "priorityThresh": 1,
+  "tests": [
+    {
+      "id": 1,
+      "status": "pass",
+      "description": "OSM venue",
+      "endpoint": "place",
+      "in": {
+        "ids": "openstreetmap:venue:way/156423744"
+      },
+      "expected": {
+        "properties": [
+          {
+            "gid": "openstreetmap:venue:way/156423744",
+            "layer": "venue",
+            "source": "openstreetmap",
+            "id": "way/156423744",
+            "source_id": "way/156423744",
+            "name": "Portland Union Station"
+          }
+        ]
+      }
+    }
+  ]
+}

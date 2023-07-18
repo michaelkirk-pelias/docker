@@ -1,0 +1,41 @@
+{
+  "name": "autocomplete focus",
+  "endpoint": "autocomplete",
+  "priorityThresh": 1,
+  "tests": [
+      {
+      "id": "1",
+      "status": "pass",
+      "in": {
+        "focus.point.lat": "45.590",
+        "focus.point.lon": "-122.783",
+        "text": "wils"
+      },
+      "expected": {
+        "priorityThresh": 3,
+        "properties": [
+          {
+            "name": "Clark and Wilson Park"
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "status": "pass",
+      "in": {
+        "focus.point.lat": "45.552",
+        "focus.point.lon": "-122.628",
+        "text": "wils"
+      },
+      "expected": {
+        "priorityThresh": 3,
+        "properties": [
+          {
+            "name": "Wilshire Park"
+          }
+        ]
+      }
+    }
+  ]
+}

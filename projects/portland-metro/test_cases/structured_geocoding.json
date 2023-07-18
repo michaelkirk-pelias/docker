@@ -1,0 +1,42 @@
+{
+  "name": "structured geocoding",
+  "priorityThresh": 1,
+  "endpoint": "search/structured",
+  "normalizers": {
+    "name": [
+      "toUpperCase",
+      "abbreviateStreetSuffixes"
+    ],
+    "street": [
+      "toUpperCase",
+      "abbreviateStreetSuffixes"
+    ]
+  },
+  "tests": [
+    {
+      "id": 1,
+      "status": "pass",
+      "in": {
+        "address": "1220 SW 5th Ave",
+        "locality": "Portland",
+        "region": "OR"
+      },
+      "expected": {
+        "properties": [
+          {
+            "layer": "address",
+            "name": "1220 SW 5TH AV",
+            "country_a": "USA",
+            "country": "United States",
+            "region": "Oregon",
+            "region_a": "OR",
+            "county": "Multnomah County",
+            "locality": "Portland",
+            "housenumber": "1220",
+            "street": "SW 5TH AV"
+          }
+        ]
+      }
+    }
+  ]
+}
