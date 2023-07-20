@@ -28,6 +28,7 @@ pelias elastic start
 pelias elastic wait
 pelias elastic create
 pelias download all
+# Is this supposed to be prepare all?
 pelias prepare placeholder
 pelias import all
 pelias compose up
